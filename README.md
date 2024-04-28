@@ -2,7 +2,44 @@
 
 ## Pasos de Instalacion 
 
-### 
+### Descargar el clone del proyecto 
+
+```sh
+git clone https://github.com/Jonathanmzd/prueba-inxait.git
+```
+
+### Crear el .env
+
+```env
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=inxait
+DB_USERNAME=root
+DB_PASSWORD=
+```
+
+### Descargar paquetes 
+
+```sh
+cd backend
+```
+
+```sh
+composer install 
+```
+
+### Realizar migration
+
+```sh
+php artisan migrate:refresh --seed
+```
+
+### Ejecutar app web
+
+```sh
+php artisan serve
+```
 
 
 ![alt text](image.png)
